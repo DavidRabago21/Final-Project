@@ -1,15 +1,46 @@
-General description of the project:
-The project, called FoodLoop, is a Python-based console application designed to reduce food waste by connecting donors and recipients in Monterrey. It provides a simple text-based interface where users can register, log in, and share surplus food through an inventory system. Additionally, the app includes a basic chat function that allows users to communicate about donations. The program stores data locally using SQLite and automatically creates the necessary tables for users, food inventory, and chat messages.
+FoodLoop
+FoodLoop is a Python console application designed to help reduce food waste in Monterrey by allowing users to donate, find, and pick up surplus food. It includes a user system, an inventory manager, a search function, expiration alerts, and a simple chat feature. The program uses SQLite for local data storage and automatically creates all necessary tables.
+Requirements
+The application requires the following:
+Python 3.8 or later
+Matplotlib (mandatory for the data visualization feature)
+No other external programs or tools are required
+SQLite is included automatically with Python
 
-Instructions to run the code:
-To run the project, the user must have Python 3.8 or later installed. No external libraries are required since the program only uses built-in modules such as sqlite3, datetime, and os. After saving the file as foodloop.py, the user can open a terminal, navigate to the file’s directory, and run python foodloop.py. On the first execution, the script automatically generates a database file named foodloop.db. All interactions occur via command-line prompts, and data is saved persistently in the local database.
+To install Matplotlib, run:
+pip install matplotlib
 
-Features implemented to date:
-The application currently includes a working user system that allows registration and login with unique usernames. It also has an inventory feature where users can add food items by specifying details such as name, area, expiration date, and quantity. The stored data can be viewed in an organized list sorted by expiration date. The chat feature enables users to send and view recent messages, fostering communication among participants. All data is managed through SQLite tables, ensuring basic data persistence between sessions.
+How to Run
+Download or copy the foodloop.py file.
+Open a terminal in the same folder.
 
-Comment on the initial impact of the project:
-This early version demonstrates a functional prototype capable of handling simple user accounts, food listings, and basic communication. Its impact lies in proving that the core idea—reducing food waste through community sharing—can be executed even with minimal technology. However, the current implementation lacks important elements like password encryption, input validation, and network connectivity, which limits its practical use. Despite these limitations, the project lays a solid foundation for future development into a more secure and scalable application.
-foodloop.py
+Run the program with:
+python foodloop.py
 
-Video of how to use it
-https://drive.google.com/file/d/11SGdrgMhjt_7UFe0Yn6O9VBJJToxp6EV/view?usp=drivesdk
+On first launch, the program will automatically create the database file foodloop.db.
+
+Features
+User System
+Register a new account
+Log in with an existing account
+
+Inventory Management
+Add food items with name, area, expiration date, and quantity
+View all available food organized by expiration date
+Search by area, expiration date, or donor
+Receive alerts for items expiring within 3 days
+Pick up items, reducing quantity or removing them when they reach zero
+
+Chat System
+Send text messages to the shared chat
+View the 10 most recent messages
+
+Data Visualization
+Display donation quantities grouped by area (requires Matplotlib)
+
+
+Initial Impact
+This early version demonstrates that the core idea of reducing food waste through community cooperation can be implemented with simple tools. The application already supports user accounts, food listings, communication, and basic tracking. Although features like password encryption, networking, and input hardening are not yet implemented, the project provides a solid foundation for future development.
+
+Video explaining how to use the app
+https://drive.google.com/file/d/1RcPvyKXpQi75dcjA3aQHvkDPtPWFM08n/view?usp=sharing
