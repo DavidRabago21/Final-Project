@@ -17,7 +17,7 @@ Open a terminal in the same folder.
 Run the program with:
 python foodloop.py
 
-On first launch, the program will automatically create the database file foodloop.db.
+On the first launch, the program will automatically create the database file foodloop.db.
 
 Features
 User System
