@@ -1,4 +1,3 @@
-FoodLoop
 FoodLoop is a Python console application designed to help reduce food waste in Monterrey by allowing users to donate, find, and pick up surplus food. It includes a user system, an inventory manager, a search function, expiration alerts, and a simple chat feature. The program uses SQLite for local data storage and automatically creates all necessary tables.
 Requirements
 The application requires the following:
